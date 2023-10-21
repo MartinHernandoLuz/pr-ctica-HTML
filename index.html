@@ -11,20 +11,50 @@
 </head>
 
 <body>
-    <h1>Martin Luz</h1>
-    <h2>¿Quién soy?</h2>
-    <p>soy un <strong>estudiante de programación </strong>, <br>me gusta crear aplicaciones y páginas, principalmente juegos o cualquier <br> cosa que funcione con pocas líneas de código, sheeeesh.</p>
-    <h2>¿Qué hice cómo estudiante de Programación?</h2>
-    <p>mi camino como estudiante de programación empieza en la universidad con <strong>C++</strong>, <br> empezar con C++ fue desafiante aunque no extremo por el hecho de haber <br>aprendido los fundamentos de programación con <strong>PSeint</strong>, diciendo la verdad <br> fue un poco decepcionante porque no hice más que calculadoras o recorrer arrays <br> en la consola, yo en verdad quería crear aplicaciones, o juegos, no algo tan simple <br> y que tendía cada vez más al bajo nivel... para bien o para mal eso cambió. <br> Pandemia, esa palabra cambió mi vida por completo, pero, estar encerrado hizo <br> que buscara cómo hacer juegos, hice dos que al día de hoy no están disponibles <br> dado que los hice con Unity. <br> Pero también quería aprender desarrollo web, así que vi muchos vídeos y ahora <br> estoy cursando con Silicon Misiones y la UTN.</p>
-    <h3>¿Qué se hacer?</h3>
-    <p>Aunque hace mucho no programo si me propongo puedo hacer:</p>
+    <header>
+        <h1>Martin Luz</h1>
+    </header>
+    <main>
+        <h2>¿Quién soy?</h2>
+        <p>soy un <strong>estudiante de programación </strong>, <br>me gusta crear aplicaciones y páginas, principalmente juegos o cualquier <br> cosa que funcione con pocas líneas de código, sheeeesh.</p>
+        <h2>¿Qué hice cómo estudiante de Programación?</h2>
+        <p>mi camino como estudiante de programación empieza en la universidad con <strong>C++</strong>, <br> empezar con C++ fue desafiante aunque no extremo por el hecho de haber <br>aprendido los fundamentos de programación con <strong>PSeint</strong>, diciendo la verdad <br> fue un poco decepcionante porque no hice más que calculadoras o recorrer arrays <br> en la consola, yo en verdad quería crear aplicaciones, o juegos, no algo tan simple <br> y que tendía cada vez más al bajo nivel... para bien o para mal eso cambió. <br> Pandemia, esa palabra cambió mi vida por completo, pero, estar encerrado hizo <br> que buscara cómo hacer juegos, hice dos que al día de hoy no están disponibles <br> dado que los hice con Unity. <br> Pero también quería aprender desarrollo web, así que vi muchos vídeos y ahora <br> estoy cursando con Silicon Misiones y la UTN.</p>
+        <h3>¿Qué se hacer?</h3>
+        <p>Aunque hace mucho no programo si me propongo puedo hacer:</p>
     
-    <ul>
-        <li>juegos sencillos con un motor</li>
-        <li>programas sencillos en consola</li>
-        <li>una calculadora usando tecnología Fronted</li>
-    </ul>
+        <ul>
+            <li>juegos sencillos con un motor</li>
+            <li>programas sencillos en consola</li>
+            <li>una calculadora usando tecnología Fronted</li>
+        </ul>
    
-    <img title="La Típica" alt="meme de la Típica" src="imágenes/IMG-20230206-WA0007.jpg">
+        <img title="La Típica" alt="meme de la Típica" src="imágenes/IMG-20230206-WA0007.jpg">
+    </main>
+
+    <section>
+        <form method="post" action="/">
+            <fieldset>
+                <legend>Información personal</legend>
+                
+                <label>Nombre:
+                    <input type="text" name="name" id="name" placeholder="Martin Heranando Luz">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <datalist id="languajes">
+                        <option value="JS"></option>
+                        <option value="Py"></option>
+                        <option value="C#"></option>
+                        <option value="Java"></option>
+                    </datalist> 
+                    <label>con qué lenguaje quieres que te ayude
+                        <input name="languajes" list="languajes">
+                    </label>  
+                </div>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
